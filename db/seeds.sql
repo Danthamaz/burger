@@ -1,3 +1,5 @@
+USE burgers_db;
+
 INSERT INTO burgers (burger_name) VALUES ("Sgt. Poblano Pepper Lonely Artichoke Hearts Club Burger");
 INSERT INTO burgers (burger_name) VALUES ("Chipotle Off the Old Block Burger");
 INSERT INTO burgers (burger_name) VALUES ("Eggers Can't Be Cheesers ");
