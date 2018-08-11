@@ -1,13 +1,14 @@
 <h1>Burgers!</h1>
 
-<h2>Burgers ready to eat!</h2>
+<h2>Burgers ready to eat:</h2>
 
 <ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
+  {{#each burgers}} {{#unless devoured}} {{burger_name}}
+  <button class="change-devoured" data-id="{{id}}" data-newDevoured="{{devoured}}">
+    {{#if devoured}}Already aten!!{{else}}EAT THIS BAD BOY!!{{/if}}
+  </button>
+  <br>
+  {{/unless}} {{/each}}
 </ul>
 
 <h2>BYOB (Build Your Own Burger)</h2>
